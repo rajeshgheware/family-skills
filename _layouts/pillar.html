@@ -25,13 +25,13 @@ layout: default
 
   <nav class="pillar-nav" aria-label="Pillar navigation">
     {% assign sorted = site.data.pillars | sort: "order" %}
+    {% assign prev_order = p.order | minus: 1 %}
+    {% assign next_order = p.order | plus: 1 %}
+    {% assign prev = nil %}
+    {% assign next = nil %}
     {% for item in sorted %}
-      {% if item.order == p.order | minus: 1 %}
-        {% assign prev = item %}
-      {% endif %}
-      {% if item.order == p.order | plus: 1 %}
-        {% assign next = item %}
-      {% endif %}
+      {% if item.order == prev_order %}{% assign prev = item %}{% endif %}
+      {% if item.order == next_order %}{% assign next = item %}{% endif %}
     {% endfor %}
 
     {% if prev %}

@@ -24,6 +24,53 @@
   cards.forEach((card) => io.observe(card));
 })();
 
+// Quiz interactivity — click to reveal correct/wrong + explanation
+(function () {
+  const quizzes = document.querySelectorAll('[data-quiz]');
+  if (!quizzes.length) return;
+
+  quizzes.forEach((quiz) => {
+    const questions = quiz.querySelectorAll('.quiz-q');
+    let correct = 0;
+    let answered = 0;
+    const total = questions.length;
+
+    questions.forEach((q) => {
+      const options = q.querySelectorAll('.quiz-opt');
+      options.forEach((opt) => {
+        opt.addEventListener('click', () => {
+          if (q.classList.contains('is-answered')) return;
+
+          const isCorrect = opt.hasAttribute('data-correct');
+          opt.classList.add(isCorrect ? 'is-correct' : 'is-wrong');
+
+          if (!isCorrect) {
+            options.forEach((o) => {
+              if (o.hasAttribute('data-correct')) o.classList.add('is-correct');
+            });
+          } else {
+            correct++;
+          }
+
+          options.forEach((o) => o.setAttribute('disabled', 'true'));
+          q.classList.add('is-answered');
+          answered++;
+
+          if (answered === total) {
+            const result = quiz.querySelector('.quiz-result');
+            const countEl = quiz.querySelector('[data-correct-count]');
+            const totalEl = quiz.querySelector('[data-total-count]');
+            if (result) result.classList.add('is-shown');
+            if (countEl) countEl.textContent = correct;
+            if (totalEl) totalEl.textContent = total;
+            result.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+          }
+        });
+      });
+    });
+  });
+})();
+
 // Scroll-progress accent on pillar pages
 (function () {
   const article = document.querySelector('.pillar-article');
