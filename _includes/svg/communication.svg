@@ -1,0 +1,16 @@
+<svg viewBox="0 0 140 140" xmlns="http://www.w3.org/2000/svg" fill="none" role="img" aria-label="Communication illustration">
+  <!-- Two overlapping speech shapes -->
+  <path d="M 25 45 Q 25 28, 42 28 L 75 28 Q 92 28, 92 45 L 92 60 Q 92 77, 75 77 L 50 77 L 38 88 L 40 77 Q 25 77, 25 60 Z"
+        stroke="currentColor" stroke-width="1.6" fill="none" stroke-linejoin="round"/>
+  <path d="M 50 70 Q 50 53, 67 53 L 100 53 Q 117 53, 117 70 L 117 85 Q 117 102, 100 102 L 75 102 L 63 113 L 65 102 Q 50 102, 50 85 Z"
+        stroke="currentColor" stroke-width="1.6" fill="currentColor" fill-opacity="0.1" stroke-linejoin="round"/>
+  <!-- Wave inside first bubble (signal) -->
+  <path d="M 35 53 Q 42 48, 49 53 T 63 53 T 77 53"
+        stroke="currentColor" stroke-width="1.4" fill="none" stroke-linecap="round"/>
+  <!-- Three dots in second bubble -->
+  <g fill="currentColor">
+    <circle cx="78" cy="78" r="2"/>
+    <circle cx="88" cy="78" r="2"/>
+    <circle cx="98" cy="78" r="2"/>
+  </g>
+</svg>

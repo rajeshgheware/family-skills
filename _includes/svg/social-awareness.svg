@@ -1,0 +1,16 @@
+<svg viewBox="0 0 140 140" xmlns="http://www.w3.org/2000/svg" fill="none" role="img" aria-label="Social and situational awareness illustration">
+  <!-- Three overlapping circles forming a triadic mind/others/situation Venn -->
+  <circle cx="55" cy="55" r="32" stroke="currentColor" stroke-width="1.6" fill="currentColor" fill-opacity="0.08"/>
+  <circle cx="85" cy="55" r="32" stroke="currentColor" stroke-width="1.6" fill="currentColor" fill-opacity="0.08"/>
+  <circle cx="70" cy="85" r="32" stroke="currentColor" stroke-width="1.6" fill="currentColor" fill-opacity="0.08"/>
+  <!-- Eye in the center (awareness) -->
+  <ellipse cx="70" cy="68" rx="10" ry="6" stroke="currentColor" stroke-width="1.5" fill="none"/>
+  <circle cx="70" cy="68" r="2.5" fill="currentColor"/>
+  <!-- Subtle radiating awareness lines -->
+  <g stroke="currentColor" stroke-width="0.9" opacity="0.5" stroke-linecap="round">
+    <line x1="40" y1="68" x2="48" y2="68"/>
+    <line x1="92" y1="68" x2="100" y2="68"/>
+    <line x1="70" y1="40" x2="70" y2="48"/>
+    <line x1="70" y1="88" x2="70" y2="96"/>
+  </g>
+</svg>

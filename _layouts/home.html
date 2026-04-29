@@ -1,0 +1,77 @@
+---
+layout: default
+---
+
+<section class="hero">
+  <div class="hero-inner">
+    <p class="eyebrow">A field guide for the runway years</p>
+    <h1 class="hero-title">
+      <span class="serif-italic">Ten</span> foundations
+      <br>before the <span class="serif-italic">world</span> opens.
+    </h1>
+    <p class="hero-lede">
+      School teaches you what to think. These ten skills teach you how to think,
+      how to feel, how to protect yourself, and how to keep going. They are not
+      subjects to memorize — they are habits to build, slowly, in the years
+      before the professional world arrives.
+    </p>
+    <a href="#pillars" class="btn-primary">Begin the tour</a>
+  </div>
+  <div class="hero-decor" aria-hidden="true">
+    {% include decorations/hero-mark.svg %}
+  </div>
+</section>
+
+<section class="pillars-section" id="pillars">
+  <header class="section-header">
+    <p class="section-eyebrow">The ten pillars</p>
+    <h2 class="section-title">Each one is a skill. Together, they are a foundation.</h2>
+  </header>
+
+  <ol class="pillar-grid">
+    {% assign sorted = site.data.pillars | sort: "order" %}
+    {% for p in sorted %}
+      {% assign pillar_page = site.pillars | where: "slug", p.slug | first %}
+      <li class="pillar-card" style="--pillar-accent: {{ p.accent }};">
+        <a href="{{ pillar_page.url | relative_url }}" class="pillar-card-link">
+          <div class="pillar-card-svg">
+            {% include svg/{{ p.slug }}.svg %}
+          </div>
+          <div class="pillar-card-meta">
+            <span class="pillar-number">{{ p.number }}</span>
+            <h3 class="pillar-card-title">{{ p.title }}</h3>
+            <p class="pillar-card-tag">{{ p.tagline }}</p>
+          </div>
+          <div class="pillar-card-cta" aria-hidden="true">
+            <span>Read</span>
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+        </a>
+      </li>
+    {% endfor %}
+  </ol>
+</section>
+
+<section class="how-to-use">
+  <div class="how-inner">
+    <p class="section-eyebrow">How to use this guide</p>
+    <h2 class="section-title">Read slowly. Practice deliberately.</h2>
+    <div class="how-grid">
+      <div class="how-item">
+        <p class="how-num">i.</p>
+        <h3>One a week is enough</h3>
+        <p>Ten skills, ten weeks. Read one, sit with it, try one practice. Speed defeats the point.</p>
+      </div>
+      <div class="how-item">
+        <p class="how-num">ii.</p>
+        <h3>Pick the practice, not the principle</h3>
+        <p>Reading about resilience does not build resilience. The exercises at the end of each chapter do.</p>
+      </div>
+      <div class="how-item">
+        <p class="how-num">iii.</p>
+        <h3>Return to it</h3>
+        <p>This is not a book you finish. It is a reference you grow into. The same paragraph at fifteen and twenty-five reads differently.</p>
+      </div>
+    </div>
+  </div>
+</section>

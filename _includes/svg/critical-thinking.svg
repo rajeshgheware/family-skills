@@ -1,0 +1,16 @@
+<svg viewBox="0 0 140 140" xmlns="http://www.w3.org/2000/svg" fill="none" role="img" aria-label="Critical thinking illustration">
+  <!-- Magnifying glass examining a claim -->
+  <circle cx="55" cy="60" r="28" stroke="currentColor" stroke-width="1.8"/>
+  <line x1="76" y1="80" x2="105" y2="108" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+  <line x1="76" y1="80" x2="105" y2="108" stroke="currentColor" stroke-width="1" stroke-linecap="round" opacity="0.4"/>
+  <!-- Question mark inside lens -->
+  <path d="M 48 50 C 48 44, 53 40, 57 41 C 62 42, 64 47, 61 51 C 58 55, 55 56, 55 62"
+        stroke="currentColor" stroke-width="1.8" stroke-linecap="round" fill="none"/>
+  <circle cx="55" cy="71" r="1.6" fill="currentColor"/>
+  <!-- Lens highlight -->
+  <path d="M 38 48 Q 42 42, 50 42" stroke="currentColor" stroke-width="1" opacity="0.4" fill="none"/>
+  <!-- Floating evaluation marks -->
+  <text x="100" y="40" font-family="Georgia, serif" font-style="italic" font-size="14" fill="currentColor" opacity="0.7">✓</text>
+  <text x="20" y="105" font-family="Georgia, serif" font-style="italic" font-size="14" fill="currentColor" opacity="0.5">×</text>
+  <text x="115" y="65" font-family="Georgia, serif" font-style="italic" font-size="11" fill="currentColor" opacity="0.5">?</text>
+</svg>

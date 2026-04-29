@@ -1,0 +1,24 @@
+<svg viewBox="0 0 140 140" xmlns="http://www.w3.org/2000/svg" fill="none" role="img" aria-label="Strategic thinking illustration">
+  <!-- Chessboard pattern in subtle grid -->
+  <g opacity="0.18">
+    <rect x="20" y="100" width="100" height="20" stroke="currentColor" stroke-width="1"/>
+    <line x1="40" y1="100" x2="40" y2="120" stroke="currentColor"/>
+    <line x1="60" y1="100" x2="60" y2="120" stroke="currentColor"/>
+    <line x1="80" y1="100" x2="80" y2="120" stroke="currentColor"/>
+    <line x1="100" y1="100" x2="100" y2="120" stroke="currentColor"/>
+    <rect x="40" y="100" width="20" height="20" fill="currentColor" opacity="0.4"/>
+    <rect x="80" y="100" width="20" height="20" fill="currentColor" opacity="0.4"/>
+  </g>
+  <!-- Knight silhouette -->
+  <path d="M 55 95 C 55 75, 60 65, 70 50 C 76 42, 76 36, 70 32 C 66 30, 66 25, 70 23 C 80 22, 92 32, 96 48 C 100 64, 92 78, 92 95 Z"
+        stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" fill="none"/>
+  <!-- Eye -->
+  <circle cx="80" cy="45" r="1.5" fill="currentColor"/>
+  <!-- Mane detail -->
+  <path d="M 70 35 L 73 45 L 68 50" stroke="currentColor" stroke-width="1.2" fill="none"/>
+  <!-- L-move dotted path showing the knight's move -->
+  <path d="M 78 95 L 78 65 L 110 65" stroke="currentColor" stroke-width="1.2" stroke-dasharray="2 3" fill="none"/>
+  <circle cx="110" cy="65" r="2.5" fill="currentColor"/>
+  <!-- Base -->
+  <path d="M 50 95 L 95 95" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+</svg>

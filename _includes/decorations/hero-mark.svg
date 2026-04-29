@@ -1,0 +1,45 @@
+<svg viewBox="0 0 380 360" xmlns="http://www.w3.org/2000/svg" fill="none" role="img" aria-label="Ten pillars woven together">
+  <!-- Concentric ring of ten pillars, woven by an arc -->
+  <g stroke="#1a1614" stroke-width="1.4">
+    <circle cx="190" cy="180" r="135" stroke-dasharray="2 5" opacity="0.35"/>
+    <circle cx="190" cy="180" r="105" opacity="0.55"/>
+  </g>
+  <!-- Ten dots around the circle -->
+  <g fill="#c9533a">
+    <circle cx="190" cy="75" r="6"/>
+    <circle cx="251" cy="93" r="6"/>
+    <circle cx="294" cy="139" r="6"/>
+    <circle cx="307" cy="200" r="6"/>
+    <circle cx="287" cy="259" r="6"/>
+    <circle cx="240" cy="298" r="6"/>
+    <circle cx="174" cy="305" r="6"/>
+    <circle cx="111" cy="282" r="6"/>
+    <circle cx="73" cy="234" r="6"/>
+    <circle cx="69" cy="171" r="6"/>
+    <circle cx="93" cy="113" r="6"/>
+    <circle cx="142" cy="79" r="6"/>
+  </g>
+  <!-- Sweeping flourish through center -->
+  <path d="M55 220 C 130 50, 250 50, 325 220" stroke="#1a1614" stroke-width="1.6" stroke-linecap="round"/>
+  <path d="M70 240 C 140 100, 240 100, 310 240" stroke="#c9533a" stroke-width="1.4" stroke-linecap="round" opacity="0.7"/>
+  <!-- Central glyph: a sapling -->
+  <g stroke="#1a1614" stroke-width="1.6" stroke-linecap="round">
+    <path d="M190 215 L190 165"/>
+    <path d="M190 195 C 180 188, 170 180, 168 168" fill="none"/>
+    <path d="M190 195 C 200 188, 210 180, 212 168" fill="none"/>
+    <path d="M190 175 C 184 170, 178 165, 178 158" fill="none"/>
+    <path d="M190 175 C 196 170, 202 165, 202 158" fill="none"/>
+  </g>
+  <!-- Soil line -->
+  <path d="M150 220 Q 190 226 230 220" stroke="#1a1614" stroke-width="1.2" stroke-linecap="round"/>
+  <!-- Roots, suggesting foundation -->
+  <g stroke="#1a1614" stroke-width="1" opacity="0.55">
+    <path d="M190 220 L 190 245"/>
+    <path d="M190 230 L 175 250"/>
+    <path d="M190 230 L 205 250"/>
+    <path d="M190 240 L 168 260"/>
+    <path d="M190 240 L 212 260"/>
+  </g>
+  <!-- Italic numeral X -->
+  <text x="190" y="338" text-anchor="middle" font-family="Georgia, serif" font-style="italic" font-size="22" fill="#a73c25">x</text>
+</svg>

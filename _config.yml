@@ -1,0 +1,41 @@
+title: Family Skills
+tagline: Foundations for the runway to professional life
+description: >-
+  Ten foundational skills for the years before adulthood — strategic thinking,
+  AI fluency, communication, emotional awareness, self-protection, success
+  mindset, financial literacy, critical thinking, health, and resilience.
+url: "https://rajeshgheware.github.io"
+baseurl: "/family-skills"
+
+author:
+  name: Rajesh Gheware
+
+# GoatCounter analytics — replace with your goatcounter site code after registering at https://www.goatcounter.com
+goatcounter_code: "family-skills"
+
+# Build settings
+markdown: kramdown
+permalink: /:collections/:slug/
+
+collections:
+  pillars:
+    output: true
+    permalink: /pillars/:slug/
+
+defaults:
+  - scope:
+      path: ""
+      type: "pillars"
+    values:
+      layout: pillar
+  - scope:
+      path: ""
+    values:
+      layout: default
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - README.md
+  - .gitignore

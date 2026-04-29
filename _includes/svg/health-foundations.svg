@@ -1,0 +1,20 @@
+<svg viewBox="0 0 140 140" xmlns="http://www.w3.org/2000/svg" fill="none" role="img" aria-label="Health foundations illustration">
+  <!-- Three circles: sleep / nutrition / movement, with the body at center -->
+  <circle cx="48" cy="50" r="24" stroke="currentColor" stroke-width="1.5" fill="currentColor" fill-opacity="0.08"/>
+  <circle cx="92" cy="50" r="24" stroke="currentColor" stroke-width="1.5" fill="currentColor" fill-opacity="0.08"/>
+  <circle cx="70" cy="92" r="24" stroke="currentColor" stroke-width="1.5" fill="currentColor" fill-opacity="0.08"/>
+  <!-- Sleep symbol (crescent moon) -->
+  <path d="M 44 46 A 8 8 0 1 1 50 56 A 6 6 0 0 0 44 46" fill="currentColor"/>
+  <!-- Nutrition symbol (leaf) -->
+  <path d="M 88 46 Q 95 40, 100 48 Q 96 56, 88 56 Q 86 50, 88 46 Z" fill="currentColor"/>
+  <line x1="88" y1="56" x2="86" y2="60" stroke="currentColor" stroke-width="1"/>
+  <!-- Movement symbol (running stride) -->
+  <g stroke="currentColor" stroke-width="1.6" stroke-linecap="round" fill="none">
+    <circle cx="70" cy="84" r="2.5" fill="currentColor"/>
+    <line x1="70" y1="86" x2="70" y2="95"/>
+    <line x1="70" y1="95" x2="65" y2="102"/>
+    <line x1="70" y1="95" x2="76" y2="100"/>
+    <line x1="70" y1="89" x2="64" y2="91"/>
+    <line x1="70" y1="89" x2="76" y2="87"/>
+  </g>
+</svg>

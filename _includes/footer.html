@@ -1,0 +1,46 @@
+<footer class="site-footer">
+  <div class="site-footer-inner">
+    <div class="site-footer-col">
+      <p class="site-footer-mark">Family Skills</p>
+      <p class="site-footer-tag">A field guide for the runway years.</p>
+    </div>
+
+    <div class="site-footer-col">
+      <p class="site-footer-heading">The pillars</p>
+      <ul class="site-footer-list">
+        {% assign sorted = site.data.pillars | sort: "order" %}
+        {% for p in sorted limit: 5 %}
+          {% assign pp = site.pillars | where: "slug", p.slug | first %}
+          <li><a href="{{ pp.url | relative_url }}">{{ p.title }}</a></li>
+        {% endfor %}
+      </ul>
+    </div>
+
+    <div class="site-footer-col">
+      <p class="site-footer-heading">More</p>
+      <ul class="site-footer-list">
+        {% assign sorted = site.data.pillars | sort: "order" %}
+        {% for p in sorted offset: 5 %}
+          {% assign pp = site.pillars | where: "slug", p.slug | first %}
+          <li><a href="{{ pp.url | relative_url }}">{{ p.title }}</a></li>
+        {% endfor %}
+      </ul>
+    </div>
+
+    <div class="site-footer-col">
+      <p class="site-footer-heading">About</p>
+      <ul class="site-footer-list">
+        <li><a href="{{ '/about/' | relative_url }}">About this guide</a></li>
+        <li><a href="https://github.com/rajeshgheware/family-skills" target="_blank" rel="noopener">Source on GitHub</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="site-footer-bottom">
+    <p>Written for Shreya &amp; Naina — and anyone walking a similar path.</p>
+    <p class="site-footer-visits" aria-live="polite">
+      <span class="site-footer-visits-label">Visits</span>
+      <img class="goat-counter-badge" src="https://{{ site.goatcounter_code }}.goatcounter.com/counter/{{ page.url | url_encode }}.svg?style=ascii" alt="Page visit count" loading="lazy">
+    </p>
+  </div>
+</footer>

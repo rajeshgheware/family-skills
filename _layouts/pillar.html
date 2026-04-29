@@ -1,0 +1,60 @@
+---
+layout: default
+---
+
+{% assign p = site.data.pillars | where: "slug", page.slug | first %}
+
+<article class="pillar-article" style="--pillar-accent: {{ p.accent }};">
+  <header class="pillar-header">
+    <div class="pillar-header-text">
+      <p class="pillar-eyebrow">
+        <span class="pillar-num">{{ p.number }}</span>
+        <span class="pillar-of">of ten</span>
+      </p>
+      <h1 class="pillar-title">{{ p.title }}</h1>
+      <p class="pillar-subtitle">{{ p.tagline }}</p>
+    </div>
+    <div class="pillar-header-svg" aria-hidden="true">
+      {% include svg/{{ p.slug }}.svg %}
+    </div>
+  </header>
+
+  <div class="pillar-body">
+    {{ content }}
+  </div>
+
+  <nav class="pillar-nav" aria-label="Pillar navigation">
+    {% assign sorted = site.data.pillars | sort: "order" %}
+    {% for item in sorted %}
+      {% if item.order == p.order | minus: 1 %}
+        {% assign prev = item %}
+      {% endif %}
+      {% if item.order == p.order | plus: 1 %}
+        {% assign next = item %}
+      {% endif %}
+    {% endfor %}
+
+    {% if prev %}
+      {% assign prev_page = site.pillars | where: "slug", prev.slug | first %}
+      <a class="pillar-nav-prev" href="{{ prev_page.url | relative_url }}">
+        <span class="pillar-nav-label">Previous</span>
+        <span class="pillar-nav-title">← {{ prev.title }}</span>
+      </a>
+    {% else %}
+      <span></span>
+    {% endif %}
+
+    {% if next %}
+      {% assign next_page = site.pillars | where: "slug", next.slug | first %}
+      <a class="pillar-nav-next" href="{{ next_page.url | relative_url }}">
+        <span class="pillar-nav-label">Next</span>
+        <span class="pillar-nav-title">{{ next.title }} →</span>
+      </a>
+    {% else %}
+      <a class="pillar-nav-next" href="{{ '/' | relative_url }}">
+        <span class="pillar-nav-label">Return</span>
+        <span class="pillar-nav-title">Back to all pillars →</span>
+      </a>
+    {% endif %}
+  </nav>
+</article>

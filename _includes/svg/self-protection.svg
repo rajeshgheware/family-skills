@@ -1,0 +1,19 @@
+<svg viewBox="0 0 140 140" xmlns="http://www.w3.org/2000/svg" fill="none" role="img" aria-label="Self-protection illustration">
+  <!-- Shield outline -->
+  <path d="M 70 22 L 105 32 L 105 62 C 105 88, 90 105, 70 116 C 50 105, 35 88, 35 62 L 35 32 Z"
+        stroke="currentColor" stroke-width="1.8" fill="currentColor" fill-opacity="0.06"/>
+  <!-- Inner shield divider -->
+  <path d="M 35 62 L 105 62" stroke="currentColor" stroke-width="1" stroke-dasharray="3 3" opacity="0.5"/>
+  <!-- Keyhole symbol (digital + physical lock) -->
+  <circle cx="70" cy="55" r="6" stroke="currentColor" stroke-width="1.6" fill="none"/>
+  <path d="M 67 60 L 65 78 L 75 78 L 73 60 Z" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linejoin="round"/>
+  <!-- Binary trickle (digital threat motif) -->
+  <g font-family="ui-monospace, monospace" font-size="6" fill="currentColor" opacity="0.55">
+    <text x="20" y="40">10</text>
+    <text x="14" y="55">01</text>
+    <text x="20" y="70">11</text>
+    <text x="111" y="40">10</text>
+    <text x="115" y="55">01</text>
+    <text x="111" y="70">10</text>
+  </g>
+</svg>

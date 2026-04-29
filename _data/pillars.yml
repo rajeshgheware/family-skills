@@ -1,0 +1,72 @@
+# Single source of truth for the ten pillars.
+# Each pillar has a slug (matches filename), title, tagline, accent color, and order.
+
+- slug: strategic-thinking
+  title: Strategic Thinking
+  tagline: Seeing several moves ahead
+  accent: "#1f3a93"
+  order: 1
+  number: "01"
+
+- slug: critical-thinking
+  title: Critical Thinking
+  tagline: The art of not being fooled
+  accent: "#6a3d9a"
+  order: 2
+  number: "02"
+
+- slug: ai-skills
+  title: AI Skills
+  tagline: Working with the most powerful tools your generation will ever touch
+  accent: "#3a7d44"
+  order: 3
+  number: "03"
+
+- slug: communication
+  title: Communication
+  tagline: Saying what you mean — and being understood
+  accent: "#c9533a"
+  order: 4
+  number: "04"
+
+- slug: social-awareness
+  title: Social & Situational Awareness
+  tagline: Reading the room, and yourself
+  accent: "#d97757"
+  order: 5
+  number: "05"
+
+- slug: self-protection
+  title: Self-Protection
+  tagline: Staying safe in a digital and physical world
+  accent: "#3d4a5b"
+  order: 6
+  number: "06"
+
+- slug: success-mindset
+  title: Success Mindset
+  tagline: The internal compass that compounds
+  accent: "#b8862c"
+  order: 7
+  number: "07"
+
+- slug: financial-literacy
+  title: Financial Literacy
+  tagline: Money is a skill, not a mystery
+  accent: "#2d5f3f"
+  order: 8
+  number: "08"
+
+- slug: health-foundations
+  title: Health Foundations
+  tagline: The body that carries everything else
+  accent: "#7a8b5e"
+  order: 9
+  number: "09"
+
+- slug: resilience
+  title: Resilience
+  tagline: How to stand up after being knocked down
+  accent: "#a04c2c"
+  order: 10
+  number: "10"
