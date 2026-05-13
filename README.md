@@ -10,6 +10,10 @@ Ten essays, one per pillar, covering: Strategic Thinking, Critical Thinking, AI 
 
 Written first for Shreya and Naina, public for anyone walking the same runway.
 
+## Side pages
+
+- **`/ll-mock-test/`** — Timed mock test for the Karnataka (Jayanagar RTO) Learner's Licence: 15 questions drawn at random from a 65-question pool, 10-minute timer, 9 correct to pass. Inline SVG traffic signs, palette navigation, keyboard shortcuts, and inline review of mistakes with explanations. Self-contained — all CSS and JS embedded in the page.
+
 ## Stack
 
 - **Jekyll** (built into GitHub Pages — no build infra needed)
@@ -44,7 +48,8 @@ bundle exec jekyll serve
 │   ├── css/main.css
 │   └── js/main.js
 ├── index.md                    # Home page
-└── about.md                    # About page
+├── about.md                    # About page
+└── ll-mock-test.md             # Karnataka LL mock test (self-contained)
 ```
 
 ## Deploying to GitHub Pages
